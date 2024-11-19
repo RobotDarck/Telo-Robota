@@ -1,0 +1,369 @@
+body{
+    background-color: rgb(45, 0, 0);
+    height: auto;
+}
+.ussr{
+    width: 1920px;
+    justify-items: center
+}
+.table{
+    width: 1200px;
+}
+.rope{
+    height: 5500px;
+    width: 25px;
+    background-color: rgba(68, 68, 68, 0);
+    margin-left: 120px;
+    position: absolute;
+    left:400px;
+    animation: move2 10s;
+    z-index: 2;
+}
+.rope::before{
+    content: '';
+    height: 5500px;
+    width: 25px;
+    background-color: rgba(68, 68, 68, 0);
+    position: absolute;
+    left: 873px;
+    animation: move3 10s;
+    z-index: 2;
+}
+.rope::after{
+    content: '';
+    width: 895px;
+    height: 40px;
+    z-index: 2;
+    background-color: rgba(68, 68, 68, 0);
+    position: absolute;
+    animation: move4 12s;
+}
+.tabler{
+    width: 1200px;
+    height: 700px;
+    background-color: red;
+    margin-top: 40px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: move 5s;
+    z-index: 1;
+}
+.c{
+    width: 120px;
+    height: 130px;
+    border-radius: 500px 600px 600px 500px;
+    border-top: 20px solid rgb(251, 255, 0);
+    border-left: 20px solid rgb(251, 255, 0);
+    border-bottom: 20px solid rgb(251, 255, 0);
+    border-right: 20px solid rgba(251, 0, 0, 0);
+}
+.p{
+    height: 170px;
+    display: flex;
+}
+.o{
+    width: 55px;
+    height: 65px;
+    border-radius: 0 600px 600px 0;
+    border-top: 20px solid rgb(251, 255, 0);
+    border-right: 20px solid rgb(251, 255, 0);
+    border-bottom: 20px solid rgb(251, 255, 0);
+}
+.I{
+    height: 170px;
+    width: 20px;
+    background-color: rgb(251, 255, 0);
+}
+@keyframes move {
+    0%{
+        left: 0;
+        top: 0;
+        transform: translateY(5000px);
+    }
+    100%{
+        left:0;
+        top:0;
+        transform: translateY(0);
+    }
+}
+@keyframes move2{
+    0%{
+        left: 400px;
+        top: 0;
+        background-color: rgb(68, 68, 68);
+    }
+    50%{
+        left: 400px;
+        top: 0;
+        background-color: rgb(68, 68, 68);
+    }
+    100%{
+        left: -1200px;
+        top: 0;
+        background-color: rgb(68, 68, 68);
+    }
+}
+@keyframes move3{
+    0%{
+        right: 400px;
+        top: 0;
+        background-color: rgb(68, 68, 68);
+    }
+    50%{
+        right: 400px;
+        top: 0;
+        background-color: rgb(68, 68, 68);
+    }
+    100%{
+        right: 500px;
+        top: 0;
+        background-color: rgb(68, 68, 68);
+    }
+}
+@keyframes move4{
+    0%{
+        left: 0px;
+        top: 0;
+        background-color: rgb(68, 68, 68);
+    }
+    50%{
+        left: 0px;
+        top: 0;
+        background-color: rgb(68, 68, 68);
+    }
+    100%{
+        right: 500px;
+        top: 0;
+        background-color: rgb(68, 68, 68);
+    }
+}
+.dark{
+    width: 100%;
+    height: 5000px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 3;
+    animation: lite 20s;
+}
+.dark::before{
+    content: '';
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-bottom: 1500px solid rgba(0, 0, 0, 0); 
+	border-left: 1900px solid transparent;
+    animation: lite2 20s;
+    
+}
+.dark::after{
+    content: '';
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-bottom: 1500px solid rgba(0, 0, 0, 0); 
+	border-right: 1900px solid transparent;
+    animation: lite3 20s;
+}
+@keyframes lite{
+    0%{
+        top: 0;
+        background-color: rgba(0, 0, 0, 0.875);
+    }
+    59%{
+        top: 0;
+        background-color: rgba(0, 0, 0, 0.875);
+    }
+    60%{
+        top: 0;
+        background-color: rgb(255, 255, 255);
+    }
+    100%{
+        top: 0;
+        background-color: rgba(255, 255, 255, 0);
+    }
+}
+@keyframes lite2{
+    0%{
+        top: 0;
+        border-bottom: 1500px solid rgba(0, 0, 0, 0);
+    }
+    50%{
+        top: 0;
+        border-bottom: 1500px solid rgba(0, 0, 0, 0);
+    }
+    56%{
+        top: 0;
+        border-bottom: 1500px solid rgba(255, 255, 178, 0.598);
+    }
+    59%{
+        top: 0;
+        border-bottom: 1500px solid rgba(255, 255, 178, 0.598);
+    }
+    61%{
+        top: 0;
+        border-bottom: 1500px solid rgba(255, 255, 255, 0);
+    }
+    100%{
+        top: 0;
+        border-bottom: 1500px solid rgba(255, 255, 255, 0);
+    }
+}
+@keyframes lite3{
+    0%{
+        top: 0;
+        border-bottom: 1500px solid rgba(0, 0, 0, 0);
+    }
+    50%{
+        top: 0;
+        border-bottom: 1500px solid rgba(0, 0, 0, 0);
+    }
+    51%{
+        top: 0;
+        border-bottom: 1500px solid rgba(255, 255, 178, 0.598);
+    }
+    54%{
+        top: 0;
+        border-bottom: 1500px solid rgba(255, 255, 178, 0.598);
+    }
+    59%{
+        top: 0;
+        border-bottom: 1500px solid rgba(255, 255, 178, 0.598);
+    }
+    61%{
+        top: 0;
+        border-bottom: 1500px solid rgba(255, 255, 255, 0);
+    }
+    100%{
+        top: 0;
+        border-bottom: 1500px solid rgba(255, 255, 255, 0);
+    }
+}
+@keyframes wow{
+    0%{
+        background-color: rgba(0, 0, 0, 0);
+        border: rgba(0, 0, 0, 0);
+    }
+    100%{
+        background-color: rgba(0, 0, 0, 0);
+        border: rgba(0, 0, 0, 0);
+    }
+}
+@keyframes wow2{
+    0%{
+        color: rgb(45, 0, 0);
+    }
+    100%{
+        color: rgb(45, 0, 0);
+    }
+}
+@keyframes wow3{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+img{
+    animation: wow3 12s;
+    width: 100px;
+    height: 60px;
+}
+.abo{
+    width: 700px;
+    height: 650px;
+    margin-top: 50px;
+    background-color: rgb(255, 0, 0);
+    animation: wow 12s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    border: 10px solid rgb(255, 216, 44);
+}
+p{
+    animation: wow2 12s;
+    color: yellow;
+}
+h1{
+    animation: wow2 12s;
+    color: yellow;
+    width: 100%;
+    text-align: center;
+}
+h3{
+    animation: wow2 12s;
+    color: yellow;
+    word-wrap: normal;
+    width: 100;
+    text-align: center;
+}
+.im1{
+    height: 600px;
+    width: 300px;
+}
+.text1{
+    height: 600px;
+    width: 300px;
+    font-size: 40;
+}
+.rep{
+    width: 580px;
+    height: 450px;
+    align-items: center;
+    margin-top: 50px;
+    background-color: rgb(255, 0, 0);
+    border: 10px solid rgb(255, 216, 44);
+    animation: wow 12s;
+}
+.flag{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.por{
+    height: 200px;
+    width: 140px;
+}
+.leader{
+    width: 500px;
+    height: 680px;
+    margin-top: 50px;
+    background-color: rgb(255, 0, 0);
+    border: 10px solid rgb(255, 216, 44);
+    animation: wow 12s;
+}
+.led{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.len{
+    justify-items: center;
+}
+.war{
+    width: 700px;
+    height: 700px;
+    margin-top: 50px;
+    background-color: rgb(255, 0, 0);
+    animation: wow 12s;
+    border: 10px solid rgb(255, 216, 44);
+}
+.der{
+    width: 300px;
+    font-size: 30px;
+    margin-top: 0;
+}
+.flage{
+    display: flex;
+}
+.ware{
+    height: 600;
+    width: 400;
+    object-fit: cover;
+}
