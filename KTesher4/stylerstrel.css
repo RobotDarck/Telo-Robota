@@ -1,0 +1,50 @@
+.bake{
+    width: 1024px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.blok{
+    width: 30%;
+    height: 245px;
+    border-radius: 0 25% 0 0;
+    background-color: #ffffff;
+    padding-top: 10px;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+body{
+    background-color: #f2f2f2;
+}
+.crug{
+    width: 60px;
+    height: 60px;
+    background-color: #2692f7;
+    border-radius: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+img{
+    width: 35px;
+    height: 35px;
+}
+.morg{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between
+}
+.french{
+    width: 80%;
+    font-weight: 100;
+}
+/* 1024 769 640 480 */
+h3{
+    font-size: small;
+    margin-top: 25px;
+    font-weight: 100;
+    font-family:'Open Sans', sans-serif;
+    word-wrap: break-word;
+}
