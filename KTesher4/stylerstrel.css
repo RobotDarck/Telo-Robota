@@ -1,8 +1,10 @@
 .bake{
-    width: 1024px;
+    width: 100%;
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
+    width: 1024px;
+    margin: 0 auto;
 }
 .blok{
     width: 30%;
@@ -153,6 +155,39 @@ h3{
         transform: translateY(0px);
     }
 }
-@media screen {
-    
+@media screen and (max-width:769px){
+    .bake{
+        width: 769;
+    }
+    .blok{
+        width: 28%;
+    }
+    h2{
+        font-size:smaller;
+    }
+    h3{
+        font-size: smaller;
+    }
+    .french{
+        font-size: 28px;
+    }
+}
+@media screen and (max-width:640px) {
+    .bake{
+        width: 640px;
+    }
+    .blok{
+        width: 40%;
+    }
+}
+@media screen and (max-width: 480px) {
+    .bake{
+        width: 480px;
+    }
+    .blok{
+        width: 70%;
+    }
+    .french{
+        font-size: 20px;
+    }
 }
