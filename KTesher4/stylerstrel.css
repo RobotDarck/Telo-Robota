@@ -13,6 +13,7 @@
     margin-top: 20px;
     padding-left: 10px;
     padding-right: 10px;
+    animation: move 4s;
 }
 body{
     background-color: #f2f2f2;
@@ -30,6 +31,9 @@ img{
     width: 35px;
     height: 35px;
 }
+.lisy{
+    width: 25;
+}
 .morg{
     width: 80%;
     display: flex;
@@ -39,6 +43,8 @@ img{
 .french{
     width: 80%;
     font-weight: 100;
+    font-family: Montserrat, sans-serif !important;
+    animation: text 3s;
 }
 /* 1024 769 640 480 */
 h3{
@@ -47,4 +53,106 @@ h3{
     font-weight: 100;
     font-family:'Open Sans', sans-serif;
     word-wrap: break-word;
+}
+@keyframes text {
+    0%{
+        font-size: 10px;
+        left: 0;
+        top: 0;
+        transform: translateY(-100px) translateX(100px);
+    }
+    100%{
+        font-size: 32px;
+        left: 0;
+        top: 0;
+        transform: translateY(0px) translateX(0px);
+    }
+}
+@keyframes first{
+    0%{
+        left: 0;
+        width: 0px;
+        height: 0px;
+        background-color: #2692ff00;
+    }
+    100%{
+        left: 0;
+        height: 60px;
+        width: 60px;
+        background-color: #2692ff;
+    }
+}
+@keyframes kru{
+    0%{
+        left: 0;
+        width: 0%;
+        height: 0px;
+        background-color: #ffffff00;
+        transform: translateY(200px);
+    }
+    100%{
+        left: 0;
+        height: 245px;
+        width: 30%;
+        background-color: #ffffff;
+        transform: translateY(0px);
+    }
+}
+@keyframes img {
+    0%{
+        left: 0;
+        width: 0px;
+        height: 0px;
+    }
+    100%{
+        left: 0;
+        width: 35px;
+        height: 35px;
+    }
+}
+@keyframes trext {
+    0%{
+        left: 0;
+        font-size: 0px;
+    }
+    100%{
+        left: 0;
+        font-size: small;
+    }
+}
+@keyframes tretxt{
+    0%{
+        left: 0;
+        font-size: 0px;
+    }
+    100%{
+        left: 0;
+        font-size: 1.5em;
+    }
+}
+.fir{
+    animation: img 3s;
+}
+#fir{
+    animation: kru 3s;
+}
+#fir2{
+    animation: first 3s;
+}
+.firt{
+    animation: trext 3s;
+}
+.firts{
+    animation: tretxt 3s;
+}
+@keyframes move{
+    0%{
+        transform: translateY(600px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+@media screen {
+    
 }
