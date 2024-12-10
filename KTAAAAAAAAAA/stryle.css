@@ -1,0 +1,31 @@
+.info{
+    display: flex;
+    justify-content: center;
+    border-bottom:2px solid #C99E67;
+}
+.list{
+    margin-top: 10px;
+}
+select{
+    border: 0;
+    font-weight: 100;
+}
+option{
+    font-size:smaller;
+}
+a{
+    font-weight: 100;
+}
+p{
+    border-right: 2px solid #C99E67;
+    margin-right: 20px;
+    padding-right: 20px;
+}
+.tri{
+    border-right: 0;
+    margin-right: 0;
+    padding-right: 0;
+}
+img{
+    width: 100%;
+}
