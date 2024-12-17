@@ -83,7 +83,7 @@ main{
     align-content: center;
     justify-content: center;
     grid-template-columns: repeat(3, 25%);
-    grid-template-rows: repeat(2, 35%);
+    grid-template-rows: repeat(2, 40%);
     grid-column-gap: 20px;
     grid-row-gap: 20px;
     height: 90%;
@@ -103,7 +103,7 @@ main{
     width: 100%;
     position: absolute;
     text-align: center;
-    margin-top: 25px;
+    margin-top: 5px;
     color: #FFFFFF;
 }
 .fone{
@@ -156,10 +156,10 @@ main{
 #rew{
     margin-top: 20px;
 }
-.proj{
+#proj{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 30%);
+    grid-template-rows: repeat(2, 40%);
     gap: 9px;
 }
 .blok2{
@@ -169,7 +169,7 @@ main{
 .kredit{
     background-color: #C99E67;
     box-shadow: 0px 0px 5px 5px #00000040;
-    align-items: center;
+    align-content: center;
 }
 .blu{
     background-color:#002266;
@@ -184,4 +184,19 @@ main{
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 9px;
+}
+.abou2{
+    color: #002266;
+    text-align: center;
+    width: 80%;
+    margin-left: 0%;
+}
+.abou2::before{
+    position: absolute;
+    content: '';
+    left: 8%;
+    width: 11%;
+    height: 50px;
+    border-bottom: 3px solid #002266;
+    border-left: 3px solid #002266;
 }
