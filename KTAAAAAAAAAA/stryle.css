@@ -111,7 +111,7 @@ main{
     position: absolute;
     z-index: 2;
 }
-.geograf{
+.blok{
     z-index: 4;
     background-color: #00000080;
     align-content: center;
@@ -146,34 +146,6 @@ main{
     justify-items: center;
     box-shadow: 0px 0px 1px 1px #00000040;
 }
-.prodaction{
-    z-index: 4;
-    background-color: #00000080;
-    align-content: center;
-    justify-items: center;
-    box-shadow: 0px 0px 1px 1px #00000040;
-}
-.buisnes{
-    z-index: 4;
-    background-color: #00000080;
-    align-content: center;
-    justify-items: center;
-    box-shadow: 0px 0px 1px 1px #00000040;
-}
-.base{
-    z-index: 4;
-    background-color: #00000080;
-    align-content: center;
-    justify-items: center;
-    box-shadow: 0px 0px 1px 1px #00000040;
-}
-.height{
-    z-index: 4;
-    background-color: #00000080;
-    align-content: center;
-    justify-items: center;
-    box-shadow: 0px 0px 2px 2px #00000040;
-}
 .sun{
     width: 67px;
     width: 67px;
@@ -183,4 +155,33 @@ main{
 }
 #rew{
     margin-top: 20px;
+}
+.proj{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 9px;
+}
+.blok2{
+    box-shadow: 0px 0px 5px 5px #00000040;
+    align-items: center;
+}
+.kredit{
+    background-color: #C99E67;
+    box-shadow: 0px 0px 5px 5px #00000040;
+    align-items: center;
+}
+.blu{
+    background-color:#002266;
+}
+.fabric2::after{
+    background-color: #FFFFFF4D;
+    width: 100%;
+    height: 100%;
+}
+.news{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 9px;
 }
