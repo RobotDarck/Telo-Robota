@@ -201,7 +201,7 @@ main{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    gap: 9px;
+    gap: 20px;
 }
 .abou2{
     color: #002266;
@@ -265,4 +265,100 @@ button{
     padding: 10px;
     padding-left: 20px;
     padding-right: 20px;
+    color: #FFFFFF;
+}
+.zaim{
+    background-color: #002266;
+    padding: 20px;
+    box-shadow: 0px 0px 5px 5px #E5E5E5
+}
+.c5{
+    color: #FFFFFF;
+    border: 0;
+    padding: 0;
+}
+.blok3{
+    background-color: #FFFFFF;
+    padding: 20px;
+    box-shadow: 0px 0px 5px 5px #E5E5E5
+}
+.c6{
+    color: black;
+    border: 0;
+    width: 100%;
+}
+.c7{
+    color: #747474;
+    border: 0;
+}
+.beta{
+    margin-top: 100px;
+}
+.beta::before{
+    content: 'Новости';
+    color: #002266;
+    font-size: xx-large;
+    position: absolute;
+    margin-top: -70px;
+    margin-left: 20px;
+}
+.beta::after{
+    content: '';
+    border-bottom: 3px solid #002266;
+    border-left: 3px solid #002266;
+    position: absolute;
+    width: 110px;
+    height: 40px;
+    margin-top: -33.5%;
+}
+.blu1{
+    background-color: #002266;
+    padding: 40px;
+}
+.gre{
+    align-items: center;
+}
+.push{
+    background-color: rgba(0, 0, 0, 0);
+    border: 0;
+}
+.imorg{
+    width: 100%;
+    height: 100%;
+}
+.risk{
+    font-weight: 300;
+}
+.y{
+    display: flex;
+    justify-content: space-between;
+}
+.c8{
+    color: #FFFFFF;
+    margin-right: 0;
+    border: 0;
+    padding: 0;
+}
+.c9{
+    color: #FFFFFF;
+    border: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid #999999;
+    padding-top: 20px;
+}
+header{
+    margin-top: 20px;
+}
+.uhuh{
+    background-color: #00000000;
+    border: 0;
+    padding: 0;
+    width: 5%;
+    height: 5%;
+}
+.ruy{
+    width: 70%;
+    justify-content: space-between;
 }
