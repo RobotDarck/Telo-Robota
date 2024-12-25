@@ -84,38 +84,35 @@ main{
     margin-top: 30px;
 }
 .psheno{
-    padding: 1px;
+    background-image: url(fone.png);
+    position: relative;
+    height: 1080;
+}
+.glist{
     display: grid;
-    align-content: center;
-    justify-content: center;
-    grid-template-columns: repeat(3, 25%);
-    grid-template-rows: repeat(2, 40%);
+    grid-template-columns: repeat(3, 35%);
+    grid-template-rows: repeat(2, 55%);
     grid-column-gap: 20px;
     grid-row-gap: 20px;
-    height: 90%;
+    align-content: center;
+    justify-content: center;
+    margin-top: 350px;
 }
 .psheno::before{
     content: '';
     position: absolute;
     background-color: #00226680;
     width: 100%;
-    height: 90%;
-    z-index: 3;
+    height: 100%;
+    z-index: 1;
 }
-.psheno::after{
-    content: 'Инвестируйте в Северо-Казахстанскую область';
-    z-index: 3;
-    font-size:40px;
-    width: 100%;
-    position: absolute;
-    text-align: center;
-    margin-top: 5px;
-    color: #FFFFFF;
-}
-.fone{
-    height: 90%;
-    position: absolute;
+.c12{
+    margin-top: 130px;
     z-index: 2;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    color: #FFFFFF;
 }
 .blok{
     z-index: 4;
@@ -123,6 +120,10 @@ main{
     align-content: center;
     justify-items: center;
     box-shadow: 0px 0px 1px 1px #00000040;
+    transition: background-color 0.3s;
+}
+.blok:hover{
+    background-color: #C99E67;
 }
 .map{
     height: 67;
@@ -145,13 +146,6 @@ main{
     margin-right: 0;
     font-size: 30px;
 }
-.nature{
-    z-index: 4;
-    background-color: #C99E67;
-    align-content: center;
-    justify-items: center;
-    box-shadow: 0px 0px 1px 1px #00000040;
-}
 .sun{
     width: 67px;
     width: 67px;
@@ -173,9 +167,12 @@ main{
     box-shadow: 0px 0px 5px 5px #E5E5E5;
     align-items: center;
     align-content: center;
+    transition: background-color 0.3s;
+}
+.blok2:hover{
+    background-color: #C99E67;
 }
 .kredit{
-    background-color: #C99E67;
     box-shadow: 0px 0px 5px 5px #E5E5E5;
     align-content: center;
 }
@@ -228,14 +225,15 @@ main{
 .c3{
     font-size: large;
     text-align: center;
+    width: 100%;
+    height: 100%;
+    transition: background-color 0.3s;
 }
 .qwert{
     height: 246px;
 }
-.c4{
-    font-size: large;
+.c3:hover{
     color: #FFFFFF;
-    text-align: center;
 }
 .fabric{
     background-color: #FFFFFF;
